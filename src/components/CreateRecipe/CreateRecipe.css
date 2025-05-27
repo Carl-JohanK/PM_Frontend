@@ -96,7 +96,7 @@
   background-color: #6441f2;
 }
 
-button {
+.submit-button {
   padding: 0.75rem 1.5rem;
   background-color: #00b894;
   color: white;
@@ -109,7 +109,7 @@ button {
   transition: background-color 0.2s ease;
 }
 
-button:hover {
+.submit-button:hover {
   background-color: #019875;
 }
 

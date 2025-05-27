@@ -192,7 +192,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                 </article>
             </main>
 
-            <button>create recipe</button>
+            <button className="submit-button">Skapa resept</button>
         </form>
     )
 }
