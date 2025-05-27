@@ -35,7 +35,7 @@ function FoodRecipe({ rescipe, fetchRequest }: Props) {
       </section>
 
       <section className="recipe-ingredients">
-        <h3>ingrediens</h3>
+        <h3>Ingredienser</h3>
         <ul>
           {
             rescipe.ingredients.map(ingredient => {
@@ -46,7 +46,7 @@ function FoodRecipe({ rescipe, fetchRequest }: Props) {
       </section>
 
       <section className="recipe-instructions">
-        <h3>discription</h3>
+        <h3>Beskrivning</h3>
         <ol>
           {
             rescipe.descriptions.map(info => {

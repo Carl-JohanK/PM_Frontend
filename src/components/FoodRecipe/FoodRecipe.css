@@ -1,57 +1,61 @@
 .food-recipe {
-    max-width: 840px;
-    margin: 1.5rem auto;
-    padding: 2rem;
-    background-color: #f1e4d0;
-    border-radius: 16px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-    font-family: 'Segoe UI', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    color: #333;
-  }
+  max-width: 840px;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  background-color: #f1e4d0;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  color: #333;
+}
 
-  .recipe-info {
-    min-width: max-content;
-    display: flex;
-    gap: 1rem;
-  }
+.recipe-info {
+  min-width: max-content;
+  display: flex;
+  gap: 1rem;
+}
 
-  .recipe-header {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .recipe-header h2 {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #2c1e1e;
-  }
-  
-  .recipe-header p {
-    font-size: 1rem;
-    color: #555;
-  }
-  
-  .recipe-ingredients h3,
-  .recipe-instructions h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 2px solid #d9bca3;
-    padding-bottom: 0.3rem;
-    color: #3b2f2f;
-  }
-  
-  .recipe-ingredients ul,
-  .recipe-instructions ol {
-    padding-left: 1.3rem;
-    margin-top: 1rem;
-  }
-  
-  .recipe-ingredients li,
-  .recipe-instructions li {
-    margin-bottom: 0.4rem;
-    line-height: 1.5;
-  }
-  
+.recipe-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.recipe-header h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #2c1e1e;
+  text-transform: capitalize;
+}
+
+.recipe-header p {
+  font-size: 1rem;
+  color: #555;
+  text-transform: capitalize;
+}
+
+.recipe-ingredients h3,
+.recipe-instructions h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid #d9bca3;
+  padding-bottom: 0.3rem;
+  color: #3b2f2f;
+  text-transform: capitalize;
+}
+
+.recipe-ingredients ul,
+.recipe-instructions ol {
+  padding-left: 1.3rem;
+  margin-top: 1rem;
+  text-transform: capitalize;
+}
+
+.recipe-ingredients li,
+.recipe-instructions li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+  text-transform: capitalize;
+}

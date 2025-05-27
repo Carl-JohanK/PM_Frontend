@@ -89,7 +89,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
     return (
         <form onSubmit={submitRecipe} action="supmit" className="form">
             <div className="form-header">
-                <h1>skapa ditt resept</h1>
+                <h1>Skapa ditt recept</h1>
                 <textarea
                     className="input-box"
                     placeholder="img URL"
@@ -104,7 +104,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                     <section className="form-input extra-gap">
                         <textarea
                             className="input-box"
-                            placeholder="dich name"
+                            placeholder="Maträtt"
                             onChange={handleInput}
                             required
                             name="dish_name"
@@ -135,7 +135,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                                 name="portion_size"
                                 min="1"
                             />
-                            <p>Persioner</p>
+                            <p>Personer</p>
                         </div>
                     </section>
                 </article>
@@ -143,7 +143,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                 <article className="side-content extra-gap">
                     <section className="list-items">
                         <div className="form-input">
-                            <h3>ingredient:</h3>
+                            <h3>Ingredienser:</h3>
 
                             <div className="div-button"
                                 onClick={() => handleArrayLength("ingredients", true)}>+</div>
@@ -168,7 +168,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
 
                     <section className="list-items">
                         <div className="form-input">
-                            <h3>description:</h3>
+                            <h3>Beskrivning:</h3>
 
                             <div className="div-button"
                                 onClick={() => handleArrayLength("descriptions", true)}>+</div>

@@ -32,11 +32,13 @@
   .rescipe-box h1 {
     font-size: 1.4rem;
     color: #333;
+    text-transform: capitalize;
   }
   
   .rescipe-box h2 {
     font-size: 1rem;
     color: #666;
+    text-transform: capitalize;
   }
   
   .image-style {

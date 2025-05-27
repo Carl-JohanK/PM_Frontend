@@ -51,7 +51,7 @@ function FoodList({ rescipes }: Props) {
           className="serech-box"
           type="text"
           placeholder="Sök recept..." />
-        <button onClick={handleSupriseMe}>överaska mig</button>
+        <button onClick={handleSupriseMe}>Överaska mig</button>
       </div>
       <article className="list-body">
         {
