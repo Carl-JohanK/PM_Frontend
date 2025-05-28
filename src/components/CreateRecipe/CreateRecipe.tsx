@@ -100,8 +100,8 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                     rows={1}></textarea>
             </div>
             <main className="form-content">
-                <article className="side-content">
-                    <section className="form-input extra-gap">
+                <article className="side-content space-between">
+                    <section className="form-input w-40">
                         <textarea
                             className="input-box"
                             placeholder="Maträtt"
@@ -110,7 +110,10 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                             name="dish_name"
                             id="name"
                             rows={1}></textarea>
-                        <div className="input-wraper">
+                    </section>
+
+                    <section className="form-input extra-gap">
+                    <div className="input-wraper">
                             <input
                                 className="input-box"
                                 type="number"
@@ -122,9 +125,6 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                             />
                             <p>Min</p>
                         </div>
-                    </section>
-
-                    <section className="form-input extra-gap">
                         <div className="input-wraper">
                             <input
                                 className="input-box"
@@ -141,7 +141,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                 </article>
 
                 <article className="side-content extra-gap">
-                    <section className="list-items">
+                    <section className="list-items w-40">
                         <div className="form-input">
                             <h3>Ingredienser:</h3>
 
@@ -166,7 +166,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                         }
                     </section>
 
-                    <section className="list-items">
+                    <section className="list-items w-50">
                         <div className="form-input">
                             <h3>Beskrivning:</h3>
 
@@ -178,12 +178,16 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                         {
                             newRecipe.descriptions.map((info, index) => {
                                 return (
-                                    <textarea className="larg-text-area input-box"
+                                    <textarea className="larg-text-area input-box overflow-y"
                                         key={index}
                                         required
                                         name={`descriptions-${index}`}
                                         id="descriptions"
-                                        onChange={(e) => { handleArrayInput("descriptions", index, e.currentTarget.value) }}
+                                        onChange={(e) => { 
+                                            e.target.style.height = "auto";
+                                            e.target.style.height = `${e.target.scrollHeight}px`;
+                                            handleArrayInput("descriptions", index, e.currentTarget.value) 
+                                        }}
                                     ></textarea>
                                 )
                             })
