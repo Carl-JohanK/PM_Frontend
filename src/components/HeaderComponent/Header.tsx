@@ -3,11 +3,11 @@ import './header.css';
 
 function Header() {
   return (
-      <header className="header">
-        <div className="center-header">
+    <header className="header">
+      <div className="center-header">
         <Link className="header-link" to={"/"}>se alla recept</Link>
         <Link className="header-link" to={"/food/create"}>skapa ditt egna recept</Link>
-    </div>
+      </div>
     </header>
   )
 }

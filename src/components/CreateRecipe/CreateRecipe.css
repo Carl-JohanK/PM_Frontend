@@ -67,6 +67,10 @@
   transition: height 0.2s ease;
 }
 
+.max-content {
+  min-width: max-content;
+}
+
 .form-input h3 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -97,7 +101,7 @@
 
 .input-box:focus {
   border-color: #b49979;
-  box-shadow: 0 0 0 3px rgba(123, 93, 252, 0.2);
+  box-shadow: 0 0 0 3px rgba(252, 167, 93, 0.2);
   outline: none;
 }
 
@@ -117,7 +121,7 @@
 }
 
 .div-button:hover {
-  background-color: #826d52;
+  background-color: #7b583b;
 }
 
 .submit-button {
@@ -135,10 +139,6 @@
 
 .submit-button:hover {
   background-color: #019875;
-}
-
-h1 {
-  min-width: max-content;
 }
 
 .input-wraper input[type="number"] {

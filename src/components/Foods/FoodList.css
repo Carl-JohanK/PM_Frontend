@@ -15,7 +15,7 @@
     align-items: center;
   }
   
-  .serech .serech-box {
+  .serech-box {
     flex: 1;
     padding: 0.5rem 1rem;
     font-size: 1rem;
@@ -23,19 +23,21 @@
     border: 1px solid #ccc;
     max-width: 400px;
   }
-  
-  .serech .serech-button {
-    padding: 0.5rem 1.2rem;
-    background-color: #ffcc80;
+
+  .suprise-button {
     border: none;
+    padding: 0.6rem 1.2rem;
     border-radius: 8px;
-    font-weight: bold;
+    background-color: #b49979;;
+    color: white;
     cursor: pointer;
-    transition: background-color 0.2s;
+    transition: background-color 0.25s ease, transform 0.15s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   }
   
-  .serech .serech-button:hover {
-    background-color: #ffb74d;
+  .suprise-button:hover {
+    background-color: #7b583b;
+    transform: translateY(-1px);
   }
   
   .list-body {

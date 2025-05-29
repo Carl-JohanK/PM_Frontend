@@ -1,9 +1,9 @@
 .food-recipe {
-  max-width: 840px;
+  max-width: 900px;
   margin: 1.5rem auto;
   padding: 2rem;
   background-color: #f1e4d0;
-  border-radius: 16px;
+  border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   font-family: 'Segoe UI', sans-serif;
   display: flex;
@@ -36,8 +36,7 @@
   text-transform: capitalize;
 }
 
-.recipe-ingredients h3,
-.recipe-instructions h3 {
+.instructions-list h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   border-bottom: 2px solid #d9bca3;
@@ -46,16 +45,12 @@
   text-transform: capitalize;
 }
 
-.recipe-ingredients ul,
-.recipe-instructions ol {
-  padding-left: 1.3rem;
-  margin-top: 1rem;
-  text-transform: capitalize;
+.list {
+  padding-left: 1.2rem;
 }
 
-.recipe-ingredients li,
-.recipe-instructions li {
-  margin-bottom: 0.4rem;
-  line-height: 1.5;
+.list-item {
+  padding-left: .3rem;
+  margin-top: .8rem;
   text-transform: capitalize;
 }

@@ -89,7 +89,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
     return (
         <form onSubmit={submitRecipe} action="supmit" className="form">
             <div className="form-header">
-                <h1>Skapa ditt recept</h1>
+                <h1 className="max-content">Skapa ditt recept</h1>
                 <textarea
                     className="input-box"
                     placeholder="img URL"
@@ -151,7 +151,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                                 onClick={() => handleArrayLength("ingredients", false)}>-</div>
                         </div>
                         {
-                            newRecipe.ingredients.map((info, index) => {
+                            newRecipe.ingredients.map((_, index) => {
                                 return (
                                     <textarea className="larg-text-area input-box"
                                         rows={1}
@@ -176,7 +176,7 @@ function CerateRecipe({ createRescipe, fetchAllRescipes }: prop) {
                                 onClick={() => handleArrayLength("descriptions", false)}>-</div>
                         </div>
                         {
-                            newRecipe.descriptions.map((info, index) => {
+                            newRecipe.descriptions.map((_, index) => {
                                 return (
                                     <textarea className="larg-text-area input-box overflow-y"
                                         key={index}
