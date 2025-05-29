@@ -50,7 +50,7 @@ function FoodRecipe({ rescipe, fetchRequest }: Props) {
         <ol className="list">
           {
             rescipe.descriptions.map(info => {
-              return <li className="list-item">{info.description}</li>
+              return <li className="list-item caps">{info.description}</li>
             })
           }
         </ol>

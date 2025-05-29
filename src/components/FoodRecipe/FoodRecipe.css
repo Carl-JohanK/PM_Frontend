@@ -52,5 +52,8 @@
 .list-item {
   padding-left: .3rem;
   margin-top: .8rem;
+}
+
+.caps {
   text-transform: capitalize;
 }
